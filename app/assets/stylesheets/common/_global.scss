@@ -6,6 +6,7 @@ $font-size-root: 10px;
 $font-size-base: 1.8rem;
 $orange: #ffad20;
 $grey: #41434a;
+$white: #fff;
 $theme-colors: (
   'primary': $orange
 );
@@ -14,12 +15,21 @@ $theme-colors: (
 @import "bootstrap";
 
 html {
-  font-size: $font-size-root;
+  font-size: 6px;
+
+  @include media-breakpoint-up(md) {
+    font-size:13px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-root;
+  }
 }
 
 body {
   font-size: $font-size-base;
   font-weight: 300;
+  width:100%;
 }
 
 .main {

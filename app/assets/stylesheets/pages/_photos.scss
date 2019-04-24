@@ -31,6 +31,10 @@
     margin-bottom: 1rem;
     position:relative;
 
+    @include media-breakpoint-down(md) {
+      flex: 0 0 calc(50% - 1rem);
+    }
+
     &:hover {
       box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.79);
 
@@ -99,6 +103,10 @@
   background: white;
   cursor: default;
   text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    font-size:1.6rem;
+  }
   /* self-clearing method: */
 }
 

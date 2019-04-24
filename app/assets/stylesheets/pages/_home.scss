@@ -2,6 +2,17 @@ body.home, body.riders {
   .navbar {
     background:rgba(black, 0.4)!important;
 
+    &.navbar-light {
+      .navbar-toggler {
+        border-color: white;
+        color:white;
+
+        .navbar-toggler-icon {
+          background-image: str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$white}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
+        }
+      }
+    }
+
     .navbar-brand {
       color:white;
     }
@@ -125,5 +136,9 @@ body.home, body.riders {
     width:100%;
     height:auto;
     border-radius: 3px;
+
+    @include media-breakpoint-down(md) {
+      margin-top:5rem;
+    }
   }
 }
