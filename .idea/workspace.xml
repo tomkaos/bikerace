@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4642c0d-8c2c-421c-9fe9-d95f2bb3779c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/common/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/common/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/common/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/common/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/_photos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/_photos.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/page/map.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/map.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/submissions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/submissions/new.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/_photos.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="487">
@@ -73,10 +68,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/flickr.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/page/map.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="379">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -161,11 +165,11 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/_home.scss" />
-        <option value="$PROJECT_DIR$/app/views/page/map.html.erb" />
         <option value="$PROJECT_DIR$/app/views/submissions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/common/_header.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/common/_global.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/_photos.scss" />
+        <option value="$PROJECT_DIR$/app/views/page/map.html.erb" />
       </list>
     </option>
   </component>
@@ -253,6 +257,12 @@
               <item name="bikerace" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bikerace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bikerace" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bikerace" type="b2602c69:ProjectViewProjectNode" />
@@ -398,25 +408,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556004283317</updated>
-      <workItem from="1556004286126" duration="39522000" />
+      <workItem from="1556004286126" duration="39942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39522000" />
+    <option name="totallyTimeSpent" value="39942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1122" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1656017" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1656017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" weight="0.32938856" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3106509" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3106509" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.32938856" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -459,13 +468,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/restart.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/flickr.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -754,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/page/map.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/submissions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -786,6 +781,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/flickr.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/page/map.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
         </state>
       </provider>
     </entry>
