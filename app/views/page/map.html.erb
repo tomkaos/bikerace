@@ -1,0 +1,55 @@
+<% provide :head_tags do %>
+  <meta name='turbolinks-visit-control' content='reload'>
+  <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key='+@google_maps_api_key %>
+  <script>
+      var map;
+      var markers = [];
+      var bounds = new google.maps.LatLngBounds();
+
+      document.addEventListener("DOMContentLoaded", function(){
+          initMap(<%= @center.latitude %>, <%= @center.longitude %>);
+      });
+
+      function initMap(lat, lng) {
+          var centerCoords = new google.maps.LatLng(lat, lng);
+          var mapOptions = {
+              center: centerCoords,
+              zoom: 14,
+              scrollwheel: false,
+          };
+          map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+          <% @riders.each do |rider| %>
+          addMarker('<%= rider.first_name %>', '<%= rider.last_name %>', <%= rider.latitude %>, <%= rider.longitude %>);
+          map.fitBounds(bounds);
+          <% end %>
+      }
+
+      function addMarker(firstName, lastName, latitude, longitude) {
+          const location = new google.maps.LatLng(latitude, longitude);
+          const marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              animation: google.maps.Animation.DROP
+          });
+          markers.push(marker);
+          bounds.extend(location);
+          const infoWindow = new google.maps.InfoWindow({});
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+          infoWindow.setContent(firstName + ' ' + lastName);
+      }
+  </script>
+<% end %>
+
+<div id="map"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="mt-5">Check out where the riders located at the moment</h2>
+      <p>You can get more info about the event's riders by clicking on the markers on the map!</p>
+    </div>
+  </div>
+</div>

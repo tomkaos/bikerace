@@ -1,0 +1,40 @@
+.navbar-brand {
+  font-weight: 500;
+  font-size:3rem;
+  line-height: 3rem;
+
+  img {
+    height: 4rem;
+  }
+}
+
+.navbar {
+  padding:1.5rem;
+
+  .navbar-nav {
+    .nav-item {
+      margin:0 1.5rem;
+
+      &:first-child {
+        margin-left:0;
+      }
+
+      &:last-child {
+        margin-right:0;
+      }
+
+      .nav-link {
+        font-size: 1.8rem;
+        font-weight: 300;
+        transition: all .3s ease-in-out;
+      }
+
+      &.active {
+        .nav-link {
+          font-weight: 500;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

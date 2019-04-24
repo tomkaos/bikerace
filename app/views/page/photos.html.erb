@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="mb-5">Our photos</h1>
+  <p class="lead">Check out our photos to get inspired to planning visit the bike race in Colorado.</p>
+  <% if @photos.present? %>
+    <div class="pagination-wrapper">
+      <%= will_paginate @photos, :class => 'digg_pagination', :previous_label => '←', :next_label => '→' %>
+    </div>
+    <div class="photo-list">
+      <% @photos.each_with_index do |photo, index| %>
+        <img src="<%= photo.attributes['url_s'] %>" style="display:none;" data-index="<%= index %>"/>
+        <a data-index="<%= index %>" class="photo" href="<%= photo.attributes['url_l'] %>" data-lightbox="photo-set">
+          <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </a>
+      <% end %>
+    </div>
+    <div class="pagination-wrapper">
+      <%= will_paginate @photos, :class => 'digg_pagination', :previous_label => '←', :next_label => '→' %>
+    </div>
+  <% end %>
+</div>

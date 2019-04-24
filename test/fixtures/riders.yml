@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: Tamas
+  last_name: Konya
+  city: Gyula
+  state: HU
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  first_name: John
+  last_name: Snow
+  city: Winterfell
+  state: WE
+  latitude: 1.5
+  longitude: 1.5

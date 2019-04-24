@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: Eva
+  last_name: Green
+  email: eva@green.com
+  slogan: Some slogan here...
+
+two:
+  first_name: Daenerys
+  last_name: Targaryen
+  email: drogon@kingdom.com
+  slogan: Burn them all

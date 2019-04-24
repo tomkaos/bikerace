@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boulder Bike Tour</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield(:head_tags) %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="<%= controller_name %> <%= action_name %>">
+    <%= render 'shared/header' %>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <%= render 'shared/footer' %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
